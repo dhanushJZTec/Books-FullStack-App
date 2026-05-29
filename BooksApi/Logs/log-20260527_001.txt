@@ -1,0 +1,216 @@
+2026-05-27 11:44:48.413 +05:30 [INF] Application started
+2026-05-27 11:44:51.317 +05:30 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-27 11:44:55.111 +05:30 [INF] Now listening on: http://localhost:5062
+2026-05-27 11:44:56.134 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-27 11:44:56.138 +05:30 [INF] Hosting environment: Development
+2026-05-27 11:44:56.140 +05:30 [INF] Content root path: D:\Project_API\BooksApi
+2026-05-27 11:45:09.606 +05:30 [WRN] As of ""2026-05-27T06:15:09.5570649+00:00"", the heartbeat has been running for ""00:00:02.4160174"" which is longer than ""00:00:01"". This could be caused by thread pool starvation.
+2026-05-27 11:45:09.786 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger - null null
+2026-05-27 11:45:11.631 +05:30 [INF] HTTP GET /swagger responded 301 in 65.7051 ms
+2026-05-27 11:45:11.692 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger - 301 null null 1939.2108ms
+2026-05-27 11:45:11.733 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/index.html - null null
+2026-05-27 11:45:12.030 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 282.9413 ms
+2026-05-27 11:45:12.034 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/swagger-ui.css - null null
+2026-05-27 11:45:12.034 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/swagger-ui-bundle.js - null null
+2026-05-27 11:45:12.039 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/index.html - 200 null text/html;charset=utf-8 306.0365ms
+2026-05-27 11:45:12.106 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/swagger-ui-standalone-preset.js - null null
+2026-05-27 11:45:12.106 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-27 11:45:12.129 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/_framework/aspnetcore-browser-refresh.js - 200 14921 application/javascript; charset=utf-8 22.4241ms
+2026-05-27 11:45:12.136 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/_vs/browserLink - null null
+2026-05-27 11:45:12.582 +05:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2026-05-27 11:45:12.586 +05:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2026-05-27 11:45:12.593 +05:30 [INF] HTTP GET /swagger/swagger-ui-standalone-preset.js responded 200 in 482.4066 ms
+2026-05-27 11:45:12.593 +05:30 [INF] HTTP GET /swagger/swagger-ui.css responded 200 in 552.1894 ms
+2026-05-27 11:45:12.597 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/swagger-ui-standalone-preset.js - 200 230280 text/javascript 491.2676ms
+2026-05-27 11:45:12.599 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/swagger-ui.css - 200 152034 text/css 564.3936ms
+2026-05-27 11:45:13.559 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/_vs/browserLink - 200 null text/javascript; charset=UTF-8 1423.3539ms
+2026-05-27 11:45:13.761 +05:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2026-05-27 11:45:13.768 +05:30 [INF] HTTP GET /swagger/swagger-ui-bundle.js responded 200 in 1724.0326 ms
+2026-05-27 11:45:13.774 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/swagger-ui-bundle.js - 200 1456926 text/javascript 1739.6105ms
+2026-05-27 11:45:14.153 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - null null
+2026-05-27 11:45:14.454 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 290.2205 ms
+2026-05-27 11:45:14.457 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 304.3651ms
+2026-05-27 11:45:14.812 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/favicon-32x32.png - null null
+2026-05-27 11:45:14.816 +05:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2026-05-27 11:45:14.819 +05:30 [INF] HTTP GET /swagger/favicon-32x32.png responded 200 in 2.7830 ms
+2026-05-27 11:45:14.822 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/favicon-32x32.png - 200 628 image/png 9.9024ms
+2026-05-27 11:45:25.033 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/.well-known/appspecific/com.chrome.devtools.json - null null
+2026-05-27 11:45:25.041 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-27 11:45:28.718 +05:30 [INF] HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 404 in 3680.2810 ms
+2026-05-27 11:45:28.721 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 3687.2729ms
+2026-05-27 11:45:28.755 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2026-05-27 12:32:09.477 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/.well-known/appspecific/com.chrome.devtools.json - null null
+2026-05-27 12:32:09.491 +05:30 [INF] HTTP GET /.well-known/appspecific/com.chrome.devtools.json responded 404 in 6.1867 ms
+2026-05-27 12:32:09.495 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 17.8848ms
+2026-05-27 12:32:09.502 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2026-05-27 14:16:43.393 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-27 14:16:44.667 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/_framework/aspnetcore-browser-refresh.js - 200 14921 application/javascript; charset=utf-8 1529.5878ms
+2026-05-27 14:16:45.143 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - null null
+2026-05-27 14:16:51.128 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 5451.6738 ms
+2026-05-27 14:16:51.190 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 6046.7989ms
+2026-05-27 16:37:06.990 +05:30 [INF] Application started
+2026-05-27 16:37:13.014 +05:30 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-27 16:37:16.850 +05:30 [INF] Now listening on: http://localhost:5062
+2026-05-27 16:37:17.831 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-27 16:37:17.833 +05:30 [INF] Hosting environment: Development
+2026-05-27 16:37:17.834 +05:30 [INF] Content root path: D:\Project_API\BooksApi
+2026-05-27 16:37:27.292 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/index.html - null null
+2026-05-27 16:37:29.135 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 256.0429 ms
+2026-05-27 16:37:29.142 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/index.html - 200 null text/html;charset=utf-8 1860.0137ms
+2026-05-27 16:37:29.198 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-27 16:37:29.204 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/_vs/browserLink - null null
+2026-05-27 16:37:29.205 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/_framework/aspnetcore-browser-refresh.js - 200 14921 application/javascript; charset=utf-8 7.0555ms
+2026-05-27 16:37:30.168 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/_vs/browserLink - 200 null text/javascript; charset=UTF-8 962.8039ms
+2026-05-27 16:37:30.283 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - null null
+2026-05-27 16:37:30.398 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 108.8114 ms
+2026-05-27 16:37:30.402 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 119.375ms
+2026-05-27 16:38:37.435 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5062/api/Auth/register - application/json 56
+2026-05-27 16:38:37.457 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-27 16:38:37.459 +05:30 [INF] CORS policy execution successful.
+2026-05-27 16:38:37.480 +05:30 [INF] CORS policy execution successful.
+2026-05-27 16:38:41.641 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.AuthController.Register (BooksApi)'
+2026-05-27 16:38:41.720 +05:30 [INF] Route matched with {action = "Register", controller = "Auth"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Register(BooksApi.DTOs.RegisterDto) on controller BooksApi.Controllers.AuthController (BooksApi).
+2026-05-27 16:38:53.375 +05:30 [INF] Executed DbCommand (1,335ms) [Parameters=[@p0='?' (Size = 4000), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Users] ([Password], [Username])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-05-27 16:38:53.539 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.String'.
+2026-05-27 16:38:53.554 +05:30 [INF] Executed action BooksApi.Controllers.AuthController.Register (BooksApi) in 11824.9214ms
+2026-05-27 16:38:53.558 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.AuthController.Register (BooksApi)'
+2026-05-27 16:38:53.562 +05:30 [INF] HTTP POST /api/Auth/register responded 200 in 16107.8725 ms
+2026-05-27 16:38:53.578 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5062/api/Auth/register - 200 null text/plain; charset=utf-8 16143.6126ms
+2026-05-27 16:40:13.377 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5062/api/Auth/login - application/json 56
+2026-05-27 16:40:13.387 +05:30 [INF] CORS policy execution successful.
+2026-05-27 16:40:13.389 +05:30 [INF] CORS policy execution successful.
+2026-05-27 16:40:13.392 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.AuthController.Login (BooksApi)'
+2026-05-27 16:40:13.405 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(BooksApi.DTOs.LoginDto) on controller BooksApi.Controllers.AuthController (BooksApi).
+2026-05-27 16:40:14.227 +05:30 [INF] Executed DbCommand (45ms) [Parameters=[@__dto_Username_0='?' (Size = 4000), @__dto_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__dto_Username_0 AND [u].[Password] = @__dto_Password_1
+2026-05-27 16:40:14.551 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-27 16:40:14.577 +05:30 [INF] Executed action BooksApi.Controllers.AuthController.Login (BooksApi) in 1168.2295ms
+2026-05-27 16:40:14.579 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.AuthController.Login (BooksApi)'
+2026-05-27 16:40:14.580 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 1193.8373 ms
+2026-05-27 16:40:14.584 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5062/api/Auth/login - 200 null application/json; charset=utf-8 1207.3699ms
+2026-05-27 17:00:22.086 +05:30 [INF] Application started
+2026-05-27 17:00:22.468 +05:30 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-27 17:00:22.823 +05:30 [INF] Now listening on: http://localhost:5062
+2026-05-27 17:00:22.994 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-27 17:00:22.996 +05:30 [INF] Hosting environment: Development
+2026-05-27 17:00:22.997 +05:30 [INF] Content root path: D:\Project_API\BooksApi
+2026-05-27 17:00:23.732 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/index.html - null null
+2026-05-27 17:00:26.652 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 291.7343 ms
+2026-05-27 17:00:26.661 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/index.html - 200 null text/html;charset=utf-8 2932.1728ms
+2026-05-27 17:00:26.687 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-27 17:00:26.692 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/_framework/aspnetcore-browser-refresh.js - 200 14921 application/javascript; charset=utf-8 5.0595ms
+2026-05-27 17:00:27.021 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/_vs/browserLink - null null
+2026-05-27 17:00:27.062 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/_vs/browserLink - 200 null text/javascript; charset=UTF-8 40.8366ms
+2026-05-27 17:00:27.274 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - null null
+2026-05-27 17:00:27.295 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 16.9185 ms
+2026-05-27 17:00:27.298 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 23.505ms
+2026-05-27 17:23:16.982 +05:30 [INF] Application started
+2026-05-27 17:23:17.111 +05:30 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-27 17:23:17.223 +05:30 [INF] Now listening on: http://localhost:5062
+2026-05-27 17:23:17.392 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-27 17:23:17.394 +05:30 [INF] Hosting environment: Development
+2026-05-27 17:23:17.395 +05:30 [INF] Content root path: D:\Project_API\BooksApi
+2026-05-27 17:23:17.912 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/index.html - null null
+2026-05-27 17:23:18.317 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 82.5662 ms
+2026-05-27 17:23:18.327 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/index.html - 200 null text/html;charset=utf-8 418.7094ms
+2026-05-27 17:23:18.424 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-27 17:23:18.429 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/_vs/browserLink - null null
+2026-05-27 17:23:18.443 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/_framework/aspnetcore-browser-refresh.js - 200 14921 application/javascript; charset=utf-8 20.7487ms
+2026-05-27 17:23:18.631 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/_vs/browserLink - 200 null text/javascript; charset=UTF-8 201.6935ms
+2026-05-27 17:23:18.688 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - null null
+2026-05-27 17:23:18.705 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 12.1228 ms
+2026-05-27 17:23:18.710 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 22.6682ms
+2026-05-27 17:24:12.537 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5062/api/Auth/login - application/json 49
+2026-05-27 17:24:12.574 +05:30 [WRN] Failed to determine the https port for redirect.
+2026-05-27 17:24:12.577 +05:30 [INF] CORS policy execution successful.
+2026-05-27 17:24:12.764 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.AuthController.Login (BooksApi)'
+2026-05-27 17:24:12.891 +05:30 [INF] Route matched with {action = "Login", controller = "Auth"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult Login(BooksApi.DTOs.LoginDto) on controller BooksApi.Controllers.AuthController (BooksApi).
+2026-05-27 17:24:17.552 +05:30 [INF] Executed DbCommand (314ms) [Parameters=[@__dto_Username_0='?' (Size = 4000), @__dto_Password_1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [u].[Id], [u].[Password], [u].[Username]
+FROM [Users] AS [u]
+WHERE [u].[Username] = @__dto_Username_0 AND [u].[Password] = @__dto_Password_1
+2026-05-27 17:24:17.744 +05:30 [INF] Executing OkObjectResult, writing value of type '<>f__AnonymousType0`1[[System.String, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2026-05-27 17:24:17.779 +05:30 [INF] Executed action BooksApi.Controllers.AuthController.Login (BooksApi) in 4855.3648ms
+2026-05-27 17:24:17.782 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.AuthController.Login (BooksApi)'
+2026-05-27 17:24:17.784 +05:30 [INF] HTTP POST /api/Auth/login responded 200 in 5240.1333 ms
+2026-05-27 17:24:17.815 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5062/api/Auth/login - 200 null application/json; charset=utf-8 5278.0354ms
+2026-05-27 17:24:55.574 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/api/Authors - null null
+2026-05-27 17:24:55.584 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.AuthorsController.GetAuthors (BooksApi)'
+2026-05-27 17:24:55.686 +05:30 [INF] Route matched with {action = "GetAuthors", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Author]]] GetAuthors() on controller BooksApi.Controllers.AuthorsController (BooksApi).
+2026-05-27 17:24:56.104 +05:30 [INF] Executed DbCommand (187ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name], [b].[Id], [b].[AuthorId], [b].[Title]
+FROM [Authors] AS [a]
+LEFT JOIN [Books_data] AS [b] ON [a].[Id] = [b].[AuthorId]
+ORDER BY [a].[Id]
+2026-05-27 17:24:56.176 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Author, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-27 17:24:56.191 +05:30 [INF] Executed action BooksApi.Controllers.AuthorsController.GetAuthors (BooksApi) in 500.5284ms
+2026-05-27 17:24:56.194 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.AuthorsController.GetAuthors (BooksApi)'
+2026-05-27 17:24:56.199 +05:30 [INF] HTTP GET /api/Authors responded 200 in 616.7895 ms
+2026-05-27 17:24:56.204 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/api/Authors - 200 null application/json; charset=utf-8 629.9143ms
+2026-05-27 17:25:58.760 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5062/api/Authors - application/json 151
+2026-05-27 17:25:58.769 +05:30 [INF] CORS policy execution successful.
+2026-05-27 17:25:58.772 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.AuthorsController.CreateAuthor (BooksApi)'
+2026-05-27 17:25:58.801 +05:30 [INF] Route matched with {action = "CreateAuthor", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksApi.Models.Author]] CreateAuthor(BooksApi.Models.Author) on controller BooksApi.Controllers.AuthorsController (BooksApi).
+2026-05-27 17:25:58.907 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-05-27 17:25:59.005 +05:30 [INF] Executed action BooksApi.Controllers.AuthorsController.CreateAuthor (BooksApi) in 196.6452ms
+2026-05-27 17:25:59.008 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.AuthorsController.CreateAuthor (BooksApi)'
+2026-05-27 17:25:59.010 +05:30 [INF] HTTP POST /api/Authors responded 400 in 241.5100 ms
+2026-05-27 17:25:59.013 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5062/api/Authors - 400 null application/problem+json; charset=utf-8 252.6277ms
+2026-05-27 17:28:23.394 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/api/Authors - null null
+2026-05-27 17:28:23.399 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.AuthorsController.GetAuthors (BooksApi)'
+2026-05-27 17:28:23.402 +05:30 [INF] Route matched with {action = "GetAuthors", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Author]]] GetAuthors() on controller BooksApi.Controllers.AuthorsController (BooksApi).
+2026-05-27 17:28:23.483 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name], [b].[Id], [b].[AuthorId], [b].[Title]
+FROM [Authors] AS [a]
+LEFT JOIN [Books_data] AS [b] ON [a].[Id] = [b].[AuthorId]
+ORDER BY [a].[Id]
+2026-05-27 17:28:23.488 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Author, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-27 17:28:23.491 +05:30 [INF] Executed action BooksApi.Controllers.AuthorsController.GetAuthors (BooksApi) in 82.7452ms
+2026-05-27 17:28:23.493 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.AuthorsController.GetAuthors (BooksApi)'
+2026-05-27 17:28:23.494 +05:30 [INF] HTTP GET /api/Authors responded 200 in 95.1941 ms
+2026-05-27 17:28:23.496 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/api/Authors - 200 null application/json; charset=utf-8 102.6921ms
+2026-05-27 17:39:48.825 +05:30 [INF] Request starting HTTP/1.1 POST http://localhost:5062/api/Authors - application/json 161
+2026-05-27 17:39:48.846 +05:30 [INF] CORS policy execution successful.
+2026-05-27 17:39:48.865 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.AuthorsController.CreateAuthor (BooksApi)'
+2026-05-27 17:39:48.866 +05:30 [INF] Route matched with {action = "CreateAuthor", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksApi.Models.Author]] CreateAuthor(BooksApi.Models.Author) on controller BooksApi.Controllers.AuthorsController (BooksApi).
+2026-05-27 17:39:48.877 +05:30 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2026-05-27 17:39:48.882 +05:30 [INF] Executed action BooksApi.Controllers.AuthorsController.CreateAuthor (BooksApi) in 7.5343ms
+2026-05-27 17:39:48.886 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.AuthorsController.CreateAuthor (BooksApi)'
+2026-05-27 17:39:48.888 +05:30 [INF] HTTP POST /api/Authors responded 400 in 42.6417 ms
+2026-05-27 17:39:48.891 +05:30 [INF] Request finished HTTP/1.1 POST http://localhost:5062/api/Authors - 400 null application/problem+json; charset=utf-8 66.7821ms
+2026-05-27 17:40:31.830 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/api/Authors - null null
+2026-05-27 17:40:31.896 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.AuthorsController.GetAuthors (BooksApi)'
+2026-05-27 17:40:31.898 +05:30 [INF] Route matched with {action = "GetAuthors", controller = "Authors"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Author]]] GetAuthors() on controller BooksApi.Controllers.AuthorsController (BooksApi).
+2026-05-27 17:40:32.082 +05:30 [INF] Executed DbCommand (41ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [a].[Id], [a].[Name], [b].[Id], [b].[AuthorId], [b].[Title]
+FROM [Authors] AS [a]
+LEFT JOIN [Books_data] AS [b] ON [a].[Id] = [b].[AuthorId]
+ORDER BY [a].[Id]
+2026-05-27 17:40:32.178 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Author, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-27 17:40:32.182 +05:30 [INF] Executed action BooksApi.Controllers.AuthorsController.GetAuthors (BooksApi) in 279.6654ms
+2026-05-27 17:40:32.184 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.AuthorsController.GetAuthors (BooksApi)'
+2026-05-27 17:40:32.187 +05:30 [INF] HTTP GET /api/Authors responded 200 in 291.2502 ms
+2026-05-27 17:40:32.196 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/api/Authors - 200 null application/json; charset=utf-8 366.0414ms
+2026-05-27 17:40:32.271 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/favicon.ico - null null
+2026-05-27 17:40:32.294 +05:30 [INF] HTTP GET /favicon.ico responded 404 in 0.7779 ms
+2026-05-27 17:40:32.297 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/favicon.ico - 404 0 null 25.8036ms
+2026-05-27 17:40:32.370 +05:30 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5062/favicon.ico, Response status code: 404
+2026-05-27 17:41:02.068 +05:30 [INF] Request starting HTTP/1.1 GET http://localhost:5062/api/Books - null null
+2026-05-27 17:41:02.075 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-27 17:41:02.099 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-27 17:41:02.286 +05:30 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-27 17:41:02.316 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-27 17:41:02.319 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 213.8738ms
+2026-05-27 17:41:02.322 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-27 17:41:02.323 +05:30 [INF] HTTP GET /api/Books responded 200 in 248.7320 ms
+2026-05-27 17:41:02.326 +05:30 [INF] Request finished HTTP/1.1 GET http://localhost:5062/api/Books - 200 null application/json; charset=utf-8 258.1127ms

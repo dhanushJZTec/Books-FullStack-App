@@ -1,0 +1,19 @@
+2026-05-27 04:55:32.281 +00:00 [INF] Application started
+2026-05-27 04:55:38.274 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-05-27 04:55:38.278 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-27 04:55:38.301 +00:00 [INF] Creating key {1ed3f0fa-19a7-4b03-b3b5-ea48b1750fb6} with creation date 2026-05-27 04:55:38Z, activation date 2026-05-27 04:55:38Z, and expiration date 2026-08-25 04:55:38Z.
+2026-05-27 04:55:40.754 +00:00 [WRN] No XML encryptor configured. Key {1ed3f0fa-19a7-4b03-b3b5-ea48b1750fb6} may be persisted to storage in unencrypted form.
+2026-05-27 04:55:40.836 +00:00 [INF] Writing data to file '/root/.aspnet/DataProtection-Keys/key-1ed3f0fa-19a7-4b03-b3b5-ea48b1750fb6.xml'.
+2026-05-27 04:55:49.741 +00:00 [INF] Now listening on: http://[::]:8080
+2026-05-27 04:55:49.742 +00:00 [INF] Now listening on: https://[::]:8081
+2026-05-27 04:55:49.747 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-27 04:55:49.748 +00:00 [INF] Hosting environment: Development
+2026-05-27 04:55:49.749 +00:00 [INF] Content root path: /app
+2026-05-27 05:22:07.008 +00:00 [INF] Application started
+2026-05-27 05:22:11.648 +00:00 [WRN] Storing keys in a directory '/root/.aspnet/DataProtection-Keys' that may not be persisted outside of the container. Protected data will be unavailable when container is destroyed. For more information go to https://aka.ms/aspnet/dataprotectionwarning
+2026-05-27 05:22:11.656 +00:00 [INF] User profile is available. Using '/root/.aspnet/DataProtection-Keys' as key repository; keys will not be encrypted at rest.
+2026-05-27 05:22:13.709 +00:00 [INF] Now listening on: http://[::]:8080
+2026-05-27 05:22:13.712 +00:00 [INF] Now listening on: https://[::]:8081
+2026-05-27 05:22:13.730 +00:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-27 05:22:13.737 +00:00 [INF] Hosting environment: Development
+2026-05-27 05:22:13.741 +00:00 [INF] Content root path: /app

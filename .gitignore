@@ -1,0 +1,16 @@
+# React
+node_modules
+dist
+build
+
+# .NET
+bin/
+obj/
+.vs/
+
+# Environment
+.env
+appsettings.Development.json
+
+# Logs
+*.log

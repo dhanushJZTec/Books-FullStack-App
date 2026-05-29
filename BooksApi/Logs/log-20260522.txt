@@ -1,0 +1,663 @@
+2026-05-22 12:10:27.358 +05:30 [INF] Application started
+2026-05-22 12:10:31.455 +05:30 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-22 12:10:36.221 +05:30 [INF] Now listening on: https://localhost:7271
+2026-05-22 12:10:36.231 +05:30 [INF] Now listening on: http://localhost:5062
+2026-05-22 12:10:37.716 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-22 12:10:37.718 +05:30 [INF] Hosting environment: Development
+2026-05-22 12:10:37.720 +05:30 [INF] Content root path: D:\Project_API\BooksApi
+2026-05-22 12:10:42.567 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/swagger/index.html - null null
+2026-05-22 12:10:44.036 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-22 12:10:44.044 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/_framework/aspnetcore-browser-refresh.js - 200 14921 application/javascript; charset=utf-8 6.3087ms
+2026-05-22 12:10:44.138 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 463.5336 ms
+2026-05-22 12:10:44.159 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/swagger/index.html - 200 null text/html;charset=utf-8 1627.0796ms
+2026-05-22 12:10:44.449 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/_vs/browserLink - null null
+2026-05-22 12:10:45.408 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/_vs/browserLink - 200 null text/javascript; charset=UTF-8 958.9875ms
+2026-05-22 12:10:45.765 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/swagger/v1/swagger.json - null null
+2026-05-22 12:10:45.917 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 147.6569 ms
+2026-05-22 12:10:45.920 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 154.3374ms
+2026-05-22 12:13:08.009 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:13:08.094 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:13:08.162 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:13:10.734 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:13:10.893 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:13:17.648 +05:30 [INF] Executed DbCommand (105ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:13:17.836 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:13:17.881 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:13:17.883 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 6978.8741ms
+2026-05-22 12:13:17.885 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:13:17.886 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:13:17.887 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:13:17.889 +05:30 [INF] HTTP GET /api/Books responded 200 in 9872.6775 ms
+2026-05-22 12:13:17.890 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:13:17.893 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:13:17.898 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 9888.4347ms
+2026-05-22 12:13:17.915 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:13:17.932 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:13:17.935 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 38.2885ms
+2026-05-22 12:13:17.937 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:13:17.938 +05:30 [INF] HTTP GET /api/Books responded 200 in 53.0540 ms
+2026-05-22 12:13:17.940 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 59.567ms
+2026-05-22 12:14:31.566 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:14:31.571 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:14:31.573 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:14:31.578 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:14:31.580 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:14:31.635 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:14:31.638 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:14:31.640 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 57.569ms
+2026-05-22 12:14:31.642 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:14:31.642 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:14:31.644 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:14:31.645 +05:30 [INF] HTTP GET /api/Books responded 200 in 74.9974 ms
+2026-05-22 12:14:31.646 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:14:31.648 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 81.9501ms
+2026-05-22 12:14:31.649 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:14:31.655 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:14:31.659 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:14:31.663 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:14:31.664 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 6.5484ms
+2026-05-22 12:14:31.666 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:14:31.667 +05:30 [INF] HTTP GET /api/Books responded 200 in 22.7427 ms
+2026-05-22 12:14:31.669 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 27.7569ms
+2026-05-22 12:14:35.439 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books/1004 - null null
+2026-05-22 12:14:35.443 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:14:35.444 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:14:35.445 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBook (BooksApi)'
+2026-05-22 12:14:35.586 +05:30 [INF] Route matched with {action = "GetBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksApi.DTOs.BookResponseDto]] GetBook(Int32) on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:14:35.969 +05:30 [INF] Executed DbCommand (191ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+WHERE [b].[Id] = @__id_0
+2026-05-22 12:14:35.977 +05:30 [INF] Executing OkObjectResult, writing value of type 'BooksApi.DTOs.BookResponseDto'.
+2026-05-22 12:14:35.981 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBook (BooksApi) in 378.3371ms
+2026-05-22 12:14:35.983 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBook (BooksApi)'
+2026-05-22 12:14:35.984 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books/1004 - null null
+2026-05-22 12:14:35.985 +05:30 [INF] HTTP GET /api/Books/1004 responded 200 in 541.4725 ms
+2026-05-22 12:14:35.988 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:14:35.993 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:14:35.991 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books/1004 - 200 null application/json; charset=utf-8 552.5613ms
+2026-05-22 12:14:35.994 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBook (BooksApi)'
+2026-05-22 12:14:36.000 +05:30 [INF] Route matched with {action = "GetBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksApi.DTOs.BookResponseDto]] GetBook(Int32) on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:14:36.007 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+WHERE [b].[Id] = @__id_0
+2026-05-22 12:14:36.012 +05:30 [INF] Executing OkObjectResult, writing value of type 'BooksApi.DTOs.BookResponseDto'.
+2026-05-22 12:14:36.014 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBook (BooksApi) in 11.2888ms
+2026-05-22 12:14:36.017 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBook (BooksApi)'
+2026-05-22 12:14:36.019 +05:30 [INF] HTTP GET /api/Books/1004 responded 200 in 30.5584 ms
+2026-05-22 12:14:36.022 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books/1004 - 200 null application/json; charset=utf-8 38.1265ms
+2026-05-22 12:14:37.195 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:14:37.199 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:14:37.200 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:14:37.202 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:14:37.204 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:14:37.209 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:14:37.213 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:14:37.215 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 8.7368ms
+2026-05-22 12:14:37.217 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:14:37.217 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:14:37.221 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:14:37.222 +05:30 [INF] HTTP GET /api/Books responded 200 in 23.3624 ms
+2026-05-22 12:14:37.223 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:14:37.225 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 29.6802ms
+2026-05-22 12:14:37.228 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:14:37.232 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:14:37.237 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:14:37.239 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:14:37.241 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 5.424ms
+2026-05-22 12:14:37.243 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:14:37.245 +05:30 [INF] HTTP GET /api/Books responded 200 in 24.3123 ms
+2026-05-22 12:14:37.247 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 30.7533ms
+2026-05-22 12:20:57.293 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/swagger/index.html - null null
+2026-05-22 12:20:57.327 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 1.1379 ms
+2026-05-22 12:20:57.330 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/swagger/index.html - 200 null text/html;charset=utf-8 36.7162ms
+2026-05-22 12:20:57.412 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-22 12:20:57.420 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/_vs/browserLink - null null
+2026-05-22 12:20:57.437 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/_framework/aspnetcore-browser-refresh.js - 200 14921 application/javascript; charset=utf-8 25.343ms
+2026-05-22 12:20:57.477 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/_vs/browserLink - 200 null text/javascript; charset=UTF-8 57.2144ms
+2026-05-22 12:20:57.543 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/swagger/v1/swagger.json - null null
+2026-05-22 12:20:57.553 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 6.7736 ms
+2026-05-22 12:20:57.555 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 11.746ms
+2026-05-22 12:21:10.056 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:21:10.074 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:21:10.079 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:21:10.086 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:21:10.089 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:21:10.112 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:21:10.120 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:21:10.122 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 28.2758ms
+2026-05-22 12:21:10.124 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:21:10.124 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:21:10.128 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:21:10.130 +05:30 [INF] HTTP GET /api/Books responded 200 in 55.8490 ms
+2026-05-22 12:21:10.132 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:21:10.134 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 77.8952ms
+2026-05-22 12:21:10.136 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:21:10.143 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:21:10.149 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:21:10.153 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:21:10.157 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 9.1754ms
+2026-05-22 12:21:10.158 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:21:10.160 +05:30 [INF] HTTP GET /api/Books responded 200 in 32.2925 ms
+2026-05-22 12:21:10.163 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 39.2445ms
+2026-05-22 12:23:12.130 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/swagger/index.html - null null
+2026-05-22 12:23:12.142 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 0.8133 ms
+2026-05-22 12:23:12.162 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-22 12:23:12.170 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/_vs/browserLink - null null
+2026-05-22 12:23:12.180 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/swagger/index.html - 200 null text/html;charset=utf-8 50.0672ms
+2026-05-22 12:23:12.185 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/_framework/aspnetcore-browser-refresh.js - 200 14921 application/javascript; charset=utf-8 23.2129ms
+2026-05-22 12:23:12.198 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/_vs/browserLink - 200 null text/javascript; charset=UTF-8 28.1007ms
+2026-05-22 12:23:12.310 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/swagger/v1/swagger.json - null null
+2026-05-22 12:23:12.322 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 9.3943 ms
+2026-05-22 12:23:12.325 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.2523ms
+2026-05-22 12:23:38.434 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:23:38.437 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:23:38.438 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:23:38.440 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:23:38.441 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:23:38.454 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:23:38.459 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:23:38.461 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 15.5624ms
+2026-05-22 12:23:38.463 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:23:38.463 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:23:38.467 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:23:38.468 +05:30 [INF] HTTP GET /api/Books responded 200 in 30.7925 ms
+2026-05-22 12:23:38.469 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:23:38.472 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 38ms
+2026-05-22 12:23:38.474 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:23:38.479 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:23:38.484 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:23:38.488 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:23:38.491 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 7.986ms
+2026-05-22 12:23:38.492 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:23:38.494 +05:30 [INF] HTTP GET /api/Books responded 200 in 27.2152 ms
+2026-05-22 12:23:38.496 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 33.646ms
+2026-05-22 12:28:54.131 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/swagger/index.html - null null
+2026-05-22 12:28:54.163 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 22.4043 ms
+2026-05-22 12:28:54.180 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/_vs/browserLink - null null
+2026-05-22 12:28:54.182 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-22 12:28:54.194 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/swagger/index.html - 200 null text/html;charset=utf-8 63.6197ms
+2026-05-22 12:28:54.204 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/_vs/browserLink - 200 null text/javascript; charset=UTF-8 23.4182ms
+2026-05-22 12:28:54.206 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/_framework/aspnetcore-browser-refresh.js - 200 14921 application/javascript; charset=utf-8 24.2184ms
+2026-05-22 12:28:54.325 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/swagger/v1/swagger.json - null null
+2026-05-22 12:28:54.336 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 3.5650 ms
+2026-05-22 12:28:54.338 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 13.2267ms
+2026-05-22 12:29:05.396 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:29:05.400 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:29:05.401 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:29:05.402 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:29:05.404 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:29:05.420 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:29:05.424 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:29:05.426 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 18.9508ms
+2026-05-22 12:29:05.427 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:29:05.427 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:29:05.430 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:29:05.431 +05:30 [INF] HTTP GET /api/Books responded 200 in 32.0633 ms
+2026-05-22 12:29:05.433 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:29:05.435 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 39.6532ms
+2026-05-22 12:29:05.437 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:29:05.442 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:29:05.446 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:29:05.450 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:29:05.452 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 6.9406ms
+2026-05-22 12:29:05.454 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:29:05.456 +05:30 [INF] HTTP GET /api/Books responded 200 in 25.6430 ms
+2026-05-22 12:29:05.458 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 31.2515ms
+2026-05-22 12:40:31.315 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:40:31.320 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:40:31.321 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:40:31.322 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:40:31.324 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:40:31.339 +05:30 [INF] Executed DbCommand (6ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:40:31.342 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:40:31.344 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 17.1047ms
+2026-05-22 12:40:31.345 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:40:31.346 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:40:31.348 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:40:31.349 +05:30 [INF] HTTP GET /api/Books responded 200 in 30.0229 ms
+2026-05-22 12:40:31.350 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:40:31.352 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 37.1363ms
+2026-05-22 12:40:31.354 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:40:31.359 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:40:31.364 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:40:31.367 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:40:31.370 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 7.7179ms
+2026-05-22 12:40:31.372 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:40:31.374 +05:30 [INF] HTTP GET /api/Books responded 200 in 25.4236 ms
+2026-05-22 12:40:31.376 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 30.596ms
+2026-05-22 12:49:17.831 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:49:17.836 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:49:17.838 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:49:17.839 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:49:17.841 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:49:17.856 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:49:17.860 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:49:17.862 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 18.0655ms
+2026-05-22 12:49:17.863 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:49:17.865 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:49:17.868 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:49:17.870 +05:30 [INF] HTTP GET /api/Books responded 200 in 33.1562 ms
+2026-05-22 12:49:17.871 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:49:17.873 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 41.5932ms
+2026-05-22 12:49:17.874 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:49:17.883 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:49:17.889 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:49:17.893 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:49:17.896 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 7.9783ms
+2026-05-22 12:49:17.899 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:49:17.900 +05:30 [INF] HTTP GET /api/Books responded 200 in 32.4531 ms
+2026-05-22 12:49:17.903 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 39.5063ms
+2026-05-22 12:49:28.352 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:49:28.357 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:49:28.359 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:49:28.360 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:49:28.363 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:49:28.367 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:49:28.371 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:49:28.377 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 11.3679ms
+2026-05-22 12:49:28.379 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:49:28.380 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:49:28.383 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:49:28.384 +05:30 [INF] HTTP GET /api/Books responded 200 in 27.2378 ms
+2026-05-22 12:49:28.386 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:49:28.390 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 38.589ms
+2026-05-22 12:49:28.392 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:49:28.399 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:49:28.403 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:49:28.410 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:49:28.413 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 10.9843ms
+2026-05-22 12:49:28.415 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:49:28.416 +05:30 [INF] HTTP GET /api/Books responded 200 in 33.2088 ms
+2026-05-22 12:49:28.419 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 40.3381ms
+2026-05-22 12:49:31.921 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:49:31.926 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:49:31.927 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:49:31.930 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:49:31.931 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:49:31.936 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:49:31.940 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:49:31.943 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 8.1888ms
+2026-05-22 12:49:31.945 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:49:31.948 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:49:31.953 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:49:31.954 +05:30 [INF] HTTP GET /api/Books responded 200 in 28.2305 ms
+2026-05-22 12:49:31.955 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:49:31.957 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 36.1628ms
+2026-05-22 12:49:31.961 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:49:31.968 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:49:31.973 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:49:31.980 +05:30 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:49:31.982 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 10.3818ms
+2026-05-22 12:49:31.986 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:49:31.987 +05:30 [INF] HTTP GET /api/Books responded 200 in 34.4642 ms
+2026-05-22 12:49:31.989 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 44.4667ms
+2026-05-22 12:49:44.171 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7271/api/Books - null null
+2026-05-22 12:49:44.175 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:49:44.177 +05:30 [INF] HTTP OPTIONS /api/Books responded 204 in 2.3410 ms
+2026-05-22 12:49:44.179 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7271/api/Books - 204 null null 8.227ms
+2026-05-22 12:49:44.181 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7271/api/Books - application/json 34
+2026-05-22 12:49:44.186 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:49:44.187 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:49:44.207 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-22 12:49:44.212 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-22 12:49:44.214 +05:30 [INF] HTTP POST /api/Books responded 401 in 27.8751 ms
+2026-05-22 12:49:44.216 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7271/api/Books - 401 0 null 34.9209ms
+2026-05-22 12:49:45.293 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7271/api/Books - application/json 34
+2026-05-22 12:49:45.297 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:49:45.299 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:49:45.301 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-22 12:49:45.303 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-22 12:49:45.304 +05:30 [INF] HTTP POST /api/Books responded 401 in 7.1631 ms
+2026-05-22 12:49:45.306 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7271/api/Books - 401 0 null 12.9937ms
+2026-05-22 12:49:45.453 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7271/api/Books - application/json 34
+2026-05-22 12:49:45.457 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:49:45.458 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:49:45.460 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-22 12:49:45.461 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-22 12:49:45.462 +05:30 [INF] HTTP POST /api/Books responded 401 in 5.6487 ms
+2026-05-22 12:49:45.464 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7271/api/Books - 401 0 null 11.5431ms
+2026-05-22 12:49:45.693 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7271/api/Books - application/json 34
+2026-05-22 12:49:45.697 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:49:45.698 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:49:45.699 +05:30 [INF] Authorization failed. These requirements were not met:
+DenyAnonymousAuthorizationRequirement: Requires an authenticated user.
+2026-05-22 12:49:45.701 +05:30 [INF] AuthenticationScheme: Bearer was challenged.
+2026-05-22 12:49:45.702 +05:30 [INF] HTTP POST /api/Books responded 401 in 5.6814 ms
+2026-05-22 12:49:45.704 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7271/api/Books - 401 0 null 11.5306ms
+2026-05-22 12:52:23.327 +05:30 [INF] Application started
+2026-05-22 12:52:23.885 +05:30 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2026-05-22 12:52:24.249 +05:30 [INF] Now listening on: https://localhost:7271
+2026-05-22 12:52:24.252 +05:30 [INF] Now listening on: http://localhost:5062
+2026-05-22 12:52:24.405 +05:30 [INF] Application started. Press Ctrl+C to shut down.
+2026-05-22 12:52:24.407 +05:30 [INF] Hosting environment: Development
+2026-05-22 12:52:24.408 +05:30 [INF] Content root path: D:\Project_API\BooksApi
+2026-05-22 12:52:24.749 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/swagger/index.html - null null
+2026-05-22 12:52:25.122 +05:30 [INF] HTTP GET /swagger/index.html responded 200 in 84.7747 ms
+2026-05-22 12:52:25.129 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/_framework/aspnetcore-browser-refresh.js - null null
+2026-05-22 12:52:25.133 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/_vs/browserLink - null null
+2026-05-22 12:52:25.150 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/swagger/index.html - 200 null text/html;charset=utf-8 401.385ms
+2026-05-22 12:52:25.155 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/_framework/aspnetcore-browser-refresh.js - 200 14921 application/javascript; charset=utf-8 26.3286ms
+2026-05-22 12:52:25.208 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.5036ms
+2026-05-22 12:52:25.261 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/swagger/v1/swagger.json - null null
+2026-05-22 12:52:25.275 +05:30 [INF] HTTP GET /swagger/v1/swagger.json responded 200 in 10.7819 ms
+2026-05-22 12:52:25.277 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/swagger/v1/swagger.json - 200 null application/json;charset=utf-8 15.9242ms
+2026-05-22 12:55:07.220 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:55:07.229 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:07.232 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:07.361 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:55:07.401 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:55:09.002 +05:30 [INF] Executed DbCommand (26ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:55:09.091 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:55:09.104 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:55:09.107 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 1695.2926ms
+2026-05-22 12:55:09.111 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:55:09.113 +05:30 [INF] HTTP GET /api/Books responded 200 in 1888.3294 ms
+2026-05-22 12:55:09.121 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 1900.9226ms
+2026-05-22 12:55:09.124 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:09.130 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:09.132 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:55:09.134 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:55:09.177 +05:30 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:55:09.182 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:55:09.184 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 45.1863ms
+2026-05-22 12:55:09.186 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:55:09.187 +05:30 [INF] HTTP GET /api/Books responded 200 in 64.6516 ms
+2026-05-22 12:55:09.190 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 86.1208ms
+2026-05-22 12:55:30.578 +05:30 [INF] Request starting HTTP/2 OPTIONS https://localhost:7271/api/Books - null null
+2026-05-22 12:55:30.582 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:30.585 +05:30 [INF] HTTP OPTIONS /api/Books responded 204 in 2.6678 ms
+2026-05-22 12:55:30.587 +05:30 [INF] Request finished HTTP/2 OPTIONS https://localhost:7271/api/Books - 204 null null 8.2456ms
+2026-05-22 12:55:30.589 +05:30 [INF] Request starting HTTP/2 POST https://localhost:7271/api/Books - application/json 35
+2026-05-22 12:55:30.595 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:30.596 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:30.600 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.CreateBook (BooksApi)'
+2026-05-22 12:55:30.611 +05:30 [INF] Route matched with {action = "CreateBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksApi.Models.Book]] CreateBook(BooksApi.DTOs.CreateBookDto) on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:55:31.072 +05:30 [INF] Executed DbCommand (199ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Books_data] ([AuthorId], [Title])
+OUTPUT INSERTED.[Id]
+VALUES (@p0, @p1);
+2026-05-22 12:55:31.148 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__book_Id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+WHERE [b].[Id] = @__book_Id_0
+2026-05-22 12:55:31.153 +05:30 [INF] Executing OkObjectResult, writing value of type 'BooksApi.Models.Book'.
+2026-05-22 12:55:31.155 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.CreateBook (BooksApi) in 539.9862ms
+2026-05-22 12:55:31.157 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.CreateBook (BooksApi)'
+2026-05-22 12:55:31.160 +05:30 [INF] HTTP POST /api/Books responded 200 in 565.0277 ms
+2026-05-22 12:55:31.163 +05:30 [INF] Request finished HTTP/2 POST https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 573.4986ms
+2026-05-22 12:55:35.225 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:55:35.230 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:35.231 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:35.237 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:55:35.239 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:55:35.248 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:55:35.255 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:55:35.257 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 10.7204ms
+2026-05-22 12:55:35.259 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:55:35.259 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:55:35.262 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:35.263 +05:30 [INF] HTTP GET /api/Books responded 200 in 33.5642 ms
+2026-05-22 12:55:35.264 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:35.269 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 43.4273ms
+2026-05-22 12:55:35.270 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:55:35.277 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:55:35.282 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:55:35.287 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:55:35.291 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 11.1044ms
+2026-05-22 12:55:35.294 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:55:35.298 +05:30 [INF] HTTP GET /api/Books responded 200 in 36.2348 ms
+2026-05-22 12:55:35.302 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 43.5066ms
+2026-05-22 12:55:37.226 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books/2002 - null null
+2026-05-22 12:55:37.231 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:37.233 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:37.234 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBook (BooksApi)'
+2026-05-22 12:55:37.241 +05:30 [INF] Route matched with {action = "GetBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksApi.DTOs.BookResponseDto]] GetBook(Int32) on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:55:37.257 +05:30 [INF] Executed DbCommand (3ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+WHERE [b].[Id] = @__id_0
+2026-05-22 12:55:37.264 +05:30 [INF] Executing OkObjectResult, writing value of type 'BooksApi.DTOs.BookResponseDto'.
+2026-05-22 12:55:37.267 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBook (BooksApi) in 21.4231ms
+2026-05-22 12:55:37.269 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books/2002 - null null
+2026-05-22 12:55:37.269 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBook (BooksApi)'
+2026-05-22 12:55:37.273 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:37.274 +05:30 [INF] HTTP GET /api/Books/2002 responded 200 in 43.2820 ms
+2026-05-22 12:55:37.275 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:37.279 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books/2002 - 200 null application/json; charset=utf-8 52.5617ms
+2026-05-22 12:55:37.281 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBook (BooksApi)'
+2026-05-22 12:55:37.288 +05:30 [INF] Route matched with {action = "GetBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksApi.DTOs.BookResponseDto]] GetBook(Int32) on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:55:37.293 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+WHERE [b].[Id] = @__id_0
+2026-05-22 12:55:37.297 +05:30 [INF] Executing OkObjectResult, writing value of type 'BooksApi.DTOs.BookResponseDto'.
+2026-05-22 12:55:37.299 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBook (BooksApi) in 8.1855ms
+2026-05-22 12:55:37.301 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBook (BooksApi)'
+2026-05-22 12:55:37.302 +05:30 [INF] HTTP GET /api/Books/2002 responded 200 in 29.4284 ms
+2026-05-22 12:55:37.304 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books/2002 - 200 null application/json; charset=utf-8 35.3801ms
+2026-05-22 12:55:38.649 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:55:38.653 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:38.655 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:38.657 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:55:38.659 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:55:38.665 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:55:38.671 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:55:38.673 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 9.1546ms
+2026-05-22 12:55:38.674 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:55:38.674 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:55:38.677 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:38.679 +05:30 [INF] HTTP GET /api/Books responded 200 in 25.3902 ms
+2026-05-22 12:55:38.680 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:38.682 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 33.1749ms
+2026-05-22 12:55:38.686 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:55:38.692 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:55:38.697 +05:30 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:55:38.703 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:55:38.706 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 10.5129ms
+2026-05-22 12:55:38.707 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:55:38.709 +05:30 [INF] HTTP GET /api/Books responded 200 in 32.2062 ms
+2026-05-22 12:55:38.712 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 37.8813ms
+2026-05-22 12:55:40.417 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books/2002 - null null
+2026-05-22 12:55:40.423 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:40.424 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:40.429 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBook (BooksApi)'
+2026-05-22 12:55:40.432 +05:30 [INF] Route matched with {action = "GetBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksApi.DTOs.BookResponseDto]] GetBook(Int32) on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:55:40.438 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+WHERE [b].[Id] = @__id_0
+2026-05-22 12:55:40.443 +05:30 [INF] Executing OkObjectResult, writing value of type 'BooksApi.DTOs.BookResponseDto'.
+2026-05-22 12:55:40.447 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBook (BooksApi) in 10.4802ms
+2026-05-22 12:55:40.449 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBook (BooksApi)'
+2026-05-22 12:55:40.449 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books/2002 - null null
+2026-05-22 12:55:40.451 +05:30 [INF] HTTP GET /api/Books/2002 responded 200 in 28.1700 ms
+2026-05-22 12:55:40.455 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:40.457 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books/2002 - 200 null application/json; charset=utf-8 40.3309ms
+2026-05-22 12:55:40.459 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:40.468 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBook (BooksApi)'
+2026-05-22 12:55:40.469 +05:30 [INF] Route matched with {action = "GetBook", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[BooksApi.DTOs.BookResponseDto]] GetBook(Int32) on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:55:40.479 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+WHERE [b].[Id] = @__id_0
+2026-05-22 12:55:40.484 +05:30 [INF] Executing OkObjectResult, writing value of type 'BooksApi.DTOs.BookResponseDto'.
+2026-05-22 12:55:40.486 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBook (BooksApi) in 8.6622ms
+2026-05-22 12:55:40.488 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBook (BooksApi)'
+2026-05-22 12:55:40.490 +05:30 [INF] HTTP GET /api/Books/2002 responded 200 in 35.2208 ms
+2026-05-22 12:55:40.494 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books/2002 - 200 null application/json; charset=utf-8 45.1226ms
+2026-05-22 12:55:42.857 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:55:42.863 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:42.865 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:42.867 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:55:42.869 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:55:42.881 +05:30 [INF] Executed DbCommand (4ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:55:42.886 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:55:42.889 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 12.7709ms
+2026-05-22 12:55:42.891 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:55:42.891 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:55:42.895 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:42.896 +05:30 [INF] HTTP GET /api/Books responded 200 in 33.2611 ms
+2026-05-22 12:55:42.897 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:42.901 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:55:42.899 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 42.647ms
+2026-05-22 12:55:42.903 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:55:42.919 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:55:42.925 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:55:42.927 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 9.962ms
+2026-05-22 12:55:42.929 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:55:42.930 +05:30 [INF] HTTP GET /api/Books responded 200 in 35.2902 ms
+2026-05-22 12:55:42.932 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 41.3711ms
+2026-05-22 12:55:47.041 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:55:47.045 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:47.047 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:47.049 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:55:47.051 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:55:47.057 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:55:47.064 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:55:47.066 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 11.9516ms
+2026-05-22 12:55:47.068 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:55:47.068 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:55:47.074 +05:30 [INF] HTTP GET /api/Books responded 200 in 28.8654 ms
+2026-05-22 12:55:47.072 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:47.081 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:55:47.079 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 37.6246ms
+2026-05-22 12:55:47.082 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:55:47.088 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:55:47.099 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:55:47.103 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:55:47.105 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 8.294ms
+2026-05-22 12:55:47.109 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:55:47.111 +05:30 [INF] HTTP GET /api/Books responded 200 in 39.3348 ms
+2026-05-22 12:55:47.114 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 45.3059ms
+2026-05-22 12:57:03.237 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:57:03.241 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:57:03.242 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:57:03.246 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:57:03.247 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:57:03.260 +05:30 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:57:03.263 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:57:03.267 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 13.925ms
+2026-05-22 12:57:03.268 +05:30 [INF] Request starting HTTP/2 GET https://localhost:7271/api/Books - null null
+2026-05-22 12:57:03.269 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:57:03.272 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:57:03.273 +05:30 [INF] HTTP GET /api/Books responded 200 in 32.5000 ms
+2026-05-22 12:57:03.274 +05:30 [INF] CORS policy execution successful.
+2026-05-22 12:57:03.276 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 39.594ms
+2026-05-22 12:57:03.278 +05:30 [INF] Executing endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:57:03.287 +05:30 [INF] Route matched with {action = "GetBooks", controller = "Books"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[BooksApi.Models.Book]]] GetBooks() on controller BooksApi.Controllers.BooksController (BooksApi).
+2026-05-22 12:57:03.292 +05:30 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [b].[Id], [b].[AuthorId], [b].[Title], [a].[Id], [a].[Name]
+FROM [Books_data] AS [b]
+INNER JOIN [Authors] AS [a] ON [b].[AuthorId] = [a].[Id]
+2026-05-22 12:57:03.296 +05:30 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[BooksApi.Models.Book, BooksApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2026-05-22 12:57:03.301 +05:30 [INF] Executed action BooksApi.Controllers.BooksController.GetBooks (BooksApi) in 11.0803ms
+2026-05-22 12:57:03.304 +05:30 [INF] Executed endpoint 'BooksApi.Controllers.BooksController.GetBooks (BooksApi)'
+2026-05-22 12:57:03.307 +05:30 [INF] HTTP GET /api/Books responded 200 in 35.2159 ms
+2026-05-22 12:57:03.309 +05:30 [INF] Request finished HTTP/2 GET https://localhost:7271/api/Books - 200 null application/json; charset=utf-8 40.5279ms
